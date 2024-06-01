@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Car1",
+    "mode": "Sport",
+    "transmission": "Manual",
+    "fuel": 90,
+    "seats": 2,
+    "actualPrice": 100.00,
+    "discountPrice": 80.00,
+    "favourite": true
+  },
+  {
+    "id": 2,
+    "name": "Car2",
+    "mode": "SUV",
+    "transmission": "Auto",
+    "fuel": 70,
+    "seats": 4,
+    "actualPrice": 100.00,
+    "discountPrice": null,
+    "favourite": false
+  }
+]

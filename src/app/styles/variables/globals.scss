@@ -1,0 +1,55 @@
+:root {
+  --clr-bg-primary: rgb(246, 247, 249);
+  --clr-bg-secondary: rgb(255, 255, 255);
+  --clr-primary: rgb(53, 99, 233);
+  --clr-primary-hover: rgb(53, 99, 233);
+  --clr-primary-active: rgb(53, 99, 233);
+  --clr-secondary: rgb(255, 255, 255);
+  --clr-secondary-hover: rgb(245 245 245);
+  --clr-secondary-active: rgb(235 235 235);
+  --clr-type-primary: rgb(26, 32, 44);
+  --clr-type-secondary: rgb(144, 163, 191);
+  --clr-type-gray: rgb(113, 113, 113);
+  --clr-type-red: rgb(237, 63, 63);
+  --clr-icon: rgb(89, 103, 128);
+  --clr-border: rgb(133, 150, 176);
+  --clr-border-secondary: rgb(236, 241, 248);
+
+  --fz-xs: 10px;
+  --fz-sm: 14px;
+  --fz-md: 18px;
+  --fz-lg: 24px;
+  --fz-xl: 30px;
+
+  --lh-xs: 16px;
+  --lh-sm: 20px;
+  --lh-md: 24px;
+  --lh-lg: 32px;
+  --lh-xl: 36px;
+
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  --transition-default: all .1s ease-in-out;
+
+  --border-primary: solid 1px var(--clr-border);
+  --border-secondary: solid 1px var(--clr-border-secondary);
+
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
+
+  --p-sm: 8px 12px;
+  --p-md: 10px 16px;
+  --p-lg: 12px 20px;
+  --p-icon-sm: 8px;
+  --p-icon-md: 10px;
+  --p-icon-lg: 12px;
+}

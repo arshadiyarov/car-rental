@@ -1,0 +1,1 @@
+export { navContent } from "./nav";

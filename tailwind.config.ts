@@ -2,19 +2,73 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/widgets/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/entities/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/shared/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        bgPrimary: "var(--clr-bg-primary)",
+        bgSecondary: "var(--clr-bg-secondary)",
+        primary: "var(--clr-primary)",
+        typePrimary: "var(--clr-type-primary)",
+        typeSecondary: "var(--clr-type-secondary)",
+        typeGray: "var(--clr-type-gray)",
+        typeRed: "var(--clr-type-red)",
+        icon: "var(--clr-icon)",
+        border: "var(--clr-border)",
+      },
+      fontSize: {
+        xs: "var(--fz-xs)",
+        sm: "var(--fz-sm)",
+        md: "var(--fz-md)",
+        lg: "var(--fz-lg)",
+        xl: "var(--fz-xl)",
+      },
+      lineHeight: {
+        xs: "var(--lh-xs)",
+        sm: "var(--lh-sm)",
+        md: "var(--lh-md)",
+        lg: "var(--lh-lg)",
+        xl: "var(--lh-xl)",
+      },
+      fontWeight: {
+        thin: "var(--font-thin)",
+        extralight: "var(--font-extralight)",
+        light: "var(--font-light)",
+        normal: "var(--font-normal)",
+        medium: "var(--font-medium)",
+        semibold: "var(--font-semibold)",
+        bold: "var(--font-bold)",
+        extrabold: "var(--font-extrabold)",
+        black: "var(--font-black)",
+      },
+      borderRadius: {
+        sm: "var(--r-sm)",
+        md: "var(--r-md)",
+        lg: "var(--r-lg)",
+      },
+      padding: {
+        sm: "var(--p-sm)",
+        md: "var(--p-md)",
+        lg: "var(--p-lg)",
+        "icon-sm": "var(--p-icon-sm)",
+        "icon-md": "var(--p-icon-md)",
+        "icon-lg": "var(--p-icon-lg)",
+      },
+      transitionProperty: {
+        default: "var(--transition-default)",
+      },
+      borderWidth: {
+        primary: "var(--border-primary)",
       },
     },
   },
   plugins: [],
 };
+
 export default config;
