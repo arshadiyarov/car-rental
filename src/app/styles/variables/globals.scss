@@ -2,11 +2,15 @@
   --clr-bg-primary: rgb(246, 247, 249);
   --clr-bg-secondary: rgb(255, 255, 255);
   --clr-primary: rgb(53, 99, 233);
-  --clr-primary-hover: rgb(53, 99, 233);
-  --clr-primary-active: rgb(53, 99, 233);
+  --clr-primary-hover: rgb(37, 86, 231);
+  --clr-primary-active: rgb(16, 71, 231);
+  --clr-primary-skeleton-base: rgb(133, 168, 248);
+  --clr-primary-skeleton-highlight: rgb(122, 161, 250);
   --clr-secondary: rgb(255, 255, 255);
   --clr-secondary-hover: rgb(245 245 245);
   --clr-secondary-active: rgb(235 235 235);
+  --clr-secondary-skeleton-base: rgb(239, 243, 253);
+  --clr-secondary-skeleton-highlight: rgb(233, 239, 253);
   --clr-type-primary: rgb(26, 32, 44);
   --clr-type-secondary: rgb(144, 163, 191);
   --clr-type-gray: rgb(113, 113, 113);
@@ -14,6 +18,10 @@
   --clr-icon: rgb(89, 103, 128);
   --clr-border: rgb(133, 150, 176);
   --clr-border-secondary: rgb(236, 241, 248);
+  --clr-scroll: 193, 193, 193;
+  --clr-scroll-hover: 173, 173, 173;
+  --clr-scroll-active: 153, 153, 153;
+
 
   --fz-xs: 10px;
   --fz-sm: 14px;
@@ -52,4 +60,8 @@
   --p-icon-sm: 8px;
   --p-icon-md: 10px;
   --p-icon-lg: 12px;
+  --p-top-main: 90px;
+
+  --z-header: 1;
+  --z-mobileNav: 2;
 }

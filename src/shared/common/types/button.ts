@@ -6,4 +6,5 @@ export type ButtonMode =
   | "icon"
   | "round"
   | "link"
-  | "ghost";
+  | "ghost"
+  | "square";

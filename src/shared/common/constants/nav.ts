@@ -4,11 +4,23 @@ export const navContent = [
     href: "/",
   },
   {
-    name: "About Us",
-    href: "/about-us",
+    name: "Rent Car",
+    href: "/rent",
   },
   {
-    name: "Contact Us",
-    href: "/contact-us",
+    name: "About",
+    href: "/about",
+  },
+  {
+    name: "Testimonials",
+    href: "/testimonials",
+  },
+  {
+    name: "Our Team",
+    href: "/team",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
   },
 ];

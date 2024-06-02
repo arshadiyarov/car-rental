@@ -176,3 +176,46 @@
     padding: var(--p-icon-lg);
   }
 }
+
+.square {
+  width: fit-content;
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+
+  svg {
+    stroke: var(--clr-secondary);
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: var(--clr-primary);
+    }
+
+    &:active {
+      background-color: var(--clr-primary);
+    }
+  }
+
+  &:hover {
+    background-color: var(--clr-primary-hover);
+  }
+
+  &:active {
+    background-color: var(--clr-primary-active);
+  }
+
+  &.sm {
+    font-size: var(--fz-sm);
+    padding: var(--p-icon-sm);
+  }
+
+  &.md {
+    font-size: var(--fz-md);
+    padding: var(--p-icon-md);
+  }
+
+  &.lg {
+    font-size: var(--fz-lg);
+    padding: var(--p-icon-lg);
+  }
+}

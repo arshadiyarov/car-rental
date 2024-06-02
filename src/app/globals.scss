@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 @import "styles/variables/globals";
+@import "styles/reset/globals";
 
 * {
   color: var(--clr-type-primary);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,7 +20,29 @@ body {
   flex-direction: column;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  transition: var(--transition-default);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--clr-scroll));
+  border-radius: 4px;
+  transition: var(--transition-default);
+
+  &:hover {
+    background-color: rgb(var(--clr-scroll-hover));
+    transition: var(--transition-default);
+  }
+
+  &:active {
+    background-color: rgb(var(--clr-scroll-active));
+    transition: var(--transition-default);
+  }
+}
+
 .wrapper {
-  width: 93%;
+  width: 90%;
   margin: 0 auto;
 }
