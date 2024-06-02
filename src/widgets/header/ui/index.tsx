@@ -7,6 +7,7 @@ import { navContent } from "shared/common";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export const Header = () => {
   const router = useRouter();
@@ -31,14 +32,24 @@ export const Header = () => {
         </ul>
         <div className={styles.buttons}>
           <Button mode={"icon"} onClick={() => router.push("/favorites")}>
-            <img src="img/utils/heart.svg" alt="Heart" />
+            <Image
+              width={24}
+              height={24}
+              src="img/utils/heart.svg"
+              alt="Heart"
+            />
           </Button>
           <Button
             mode={"icon"}
             className={styles.burger}
             onClick={toggleMobileNav}
           >
-            <img src="img/utils/burger.svg" alt="Burger" />
+            <Image
+              width={24}
+              height={24}
+              src="img/utils/burger.svg"
+              alt="Burger"
+            />
           </Button>
         </div>
       </div>
@@ -68,7 +79,12 @@ export const Header = () => {
             className={styles.burger}
             onClick={toggleMobileNav}
           >
-            <img src="img/utils/close.svg" alt="Close" />
+            <Image
+              width={24}
+              height={24}
+              src="img/utils/close.svg"
+              alt="Close"
+            />
           </Button>
         </div>
       </div>

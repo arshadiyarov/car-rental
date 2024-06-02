@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 import { IProps } from "./props";
 import Skeleton from "react-loading-skeleton";
+import Image from "next/image";
 
 export const CardSkeleton = (props: IProps) => {
   return (
@@ -18,9 +19,14 @@ export const CardSkeleton = (props: IProps) => {
             borderRadius="25px"
           />
         </div>
-        <img src="img/utils/heart-fill.svg" alt="heart" />
+        <Image
+          src="img/utils/heart-fill.svg"
+          alt="heart"
+          width={24}
+          height={24}
+        />
       </div>
-      <img
+      <Image
         src="img/utils/gallery.svg"
         alt="Gallery"
         width={70}
