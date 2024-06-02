@@ -10,6 +10,9 @@
 
 body {
   background-color: var(--clr-bg-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {

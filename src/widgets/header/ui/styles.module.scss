@@ -10,7 +10,6 @@
       display: flex;
       align-items: center;
       gap: 40px;
-      font-size: var(--fz-md);
       font-weight: var(--font-medium);
 
       .li {
@@ -24,6 +23,10 @@
       display: flex;
       align-items: center;
       gap: 12px;
+
+      svg {
+        fill: var(--clr-icon);
+      }
     }
   }
 }
