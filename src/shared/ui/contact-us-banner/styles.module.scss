@@ -1,0 +1,28 @@
+.content {
+  width: 100%;
+  font-size: var(--fz-2xl);
+  font-weight: var(--font-bold);
+  background-color: var(--clr-type-primary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 0;
+  gap: 32px;
+
+  @media (max-width: 768px) {
+    font-size: var(--fz-lg);
+  }
+
+  @media (max-width: 640px) {
+    font-size: var(--fz-md);
+  }
+
+  .description {
+    color: var(--clr-secondary);
+  }
+
+  .phone {
+    color: var(--clr-primary);
+  }
+}

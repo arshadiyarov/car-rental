@@ -18,22 +18,25 @@
   --clr-icon: rgb(89, 103, 128);
   --clr-border: rgb(133, 150, 176);
   --clr-border-secondary: rgb(236, 241, 248);
-  --clr-scroll: 193, 193, 193;
-  --clr-scroll-hover: 173, 173, 173;
-  --clr-scroll-active: 153, 153, 153;
+  --clr-scroll: rgb(193, 193, 193);
+  --clr-scroll-hover: rgb(173, 173, 173);
+  --clr-scroll-active: rgb(153, 153, 153);
 
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   --fz-xs: 10px;
   --fz-sm: 14px;
   --fz-md: 18px;
   --fz-lg: 24px;
   --fz-xl: 30px;
+  --fz-2xl: 36px;
 
   --lh-xs: 16px;
   --lh-sm: 20px;
   --lh-md: 24px;
   --lh-lg: 32px;
   --lh-xl: 36px;
+  --lh-2xl: 40px;
 
   --font-thin: 100;
   --font-extralight: 200;

@@ -28,6 +28,7 @@ const config: Config = {
         md: "var(--fz-md)",
         lg: "var(--fz-lg)",
         xl: "var(--fz-xl)",
+        "2xl": "var(--fz-2xl)",
       },
       lineHeight: {
         xs: "var(--lh-xs)",
@@ -35,6 +36,7 @@ const config: Config = {
         md: "var(--lh-md)",
         lg: "var(--lh-lg)",
         xl: "var(--lh-xl)",
+        "2xl": "var(--lh-2xl)",
       },
       fontWeight: {
         thin: "var(--font-thin)",

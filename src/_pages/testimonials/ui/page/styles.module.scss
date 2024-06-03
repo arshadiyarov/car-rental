@@ -1,0 +1,19 @@
+.container {
+  padding-top: var(--p-top-main);
+  margin-bottom: 40px;
+
+  .content {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+
+    .reviews {
+      display: flex;
+      align-items: stretch;
+      gap: 36px;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -35,12 +35,12 @@
     @media (max-width: 768px) {
       .popularCars {
         display: flex;
-        overflow-x: auto; /* горизонтальная прокрутка */
+        overflow-x: auto;
         gap: 24px;
       }
 
       .popularCars > * {
-        flex: 0 0 auto; /* предотвращает сжатие элементов */
+        flex: 0 0 auto;
       }
     }
   }

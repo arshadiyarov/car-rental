@@ -27,17 +27,17 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(var(--clr-scroll));
+  background-color: var(--clr-scroll);
   border-radius: 4px;
   transition: var(--transition-default);
 
   &:hover {
-    background-color: rgb(var(--clr-scroll-hover));
+    background-color: var(--clr-scroll-hover);
     transition: var(--transition-default);
   }
 
   &:active {
-    background-color: rgb(var(--clr-scroll-active));
+    background-color: var(--clr-scroll-active);
     transition: var(--transition-default);
   }
 }

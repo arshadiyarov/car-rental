@@ -1,0 +1,10 @@
+.container {
+  padding-top: var(--p-top-main);
+
+  .content {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
+}

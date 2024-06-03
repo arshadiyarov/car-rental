@@ -1,6 +1,5 @@
 import styles from "./styles.module.scss";
-import { IProps } from "./props";
 
-export const Main = (props: IProps) => {
+export const Main = () => {
   return <main>Main</main>;
 };

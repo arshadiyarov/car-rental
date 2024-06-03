@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./styles.module.scss";
-import { IProps } from "./props";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
 import { Car } from "shared/common";
@@ -11,7 +10,7 @@ import { putLike } from "_pages/favorites/api";
 import Link from "next/link";
 import { SectionHeader } from "shared/ui";
 
-export const Favorites = (props: IProps) => {
+export const Favorites = () => {
   const [favouriteCars, setFavouriteCars] = useState<Car[]>([]);
 
   const fetchFavouriteCars = async () => {
