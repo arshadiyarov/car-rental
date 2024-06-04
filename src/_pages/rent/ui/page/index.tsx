@@ -10,15 +10,51 @@ import { Car, skeletonArr } from "shared/common";
 import { getCars, putLike } from "_pages/rent/api";
 import { CardSkeleton } from "widgets/card-skeleton";
 
+interface Data {
+  city: string;
+  date: string;
+  time: string;
+}
+
 export const Rent = () => {
   const [carsData, setCarsData] = useState<Car[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [pickData, setPickData] = useState<Data>({
+    city: "",
+    date: "",
+    time: "",
+  });
+  const [dropData, setDropData] = useState<Data>({
+    city: "",
+    date: "",
+    time: "",
+  });
+
+  const handlePickUpChange = (key: keyof Data, val: string) => {
+    setPickData((prevState) => ({ ...prevState, [key]: val }));
+  };
+
+  const handleDropOffChange = (key: keyof Data, val: string) => {
+    setDropData((prevState) => ({ ...prevState, [key]: val }));
+  };
+
+  const handleSwitchClick = () => {
+    const temp = { ...pickData };
+    setPickData(dropData);
+    setDropData(temp);
+  };
 
   const fetchCars = async () => {
     setIsLoading(true);
-    const res = await getCars();
-    setCarsData(res);
-    setIsLoading(false);
+    try {
+      const res = await getCars();
+      setCarsData(Array.isArray(res) ? res : []);
+    } catch (error) {
+      console.error("Failed to fetch cars:", error);
+      setCarsData([]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const updateLike = async (id: string) => {
@@ -42,8 +78,12 @@ export const Rent = () => {
     <main className={classNames("wrapper", styles.container)}>
       <div className={styles.content}>
         <div className={styles.pickDrop}>
-          <PickDrop title={"Pick-Up"} />
-          <Button mode={"square"} size={"lg"}>
+          <PickDrop
+            title={"Pick-Up"}
+            {...pickData}
+            dataChange={handlePickUpChange}
+          />
+          <Button mode={"square"} size={"lg"} onClick={handleSwitchClick}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -62,26 +102,38 @@ export const Rent = () => {
               ></path>
             </svg>
           </Button>
-          <PickDrop title={"Drop-Off"} />
+          <PickDrop
+            title={"Drop-Off"}
+            {...dropData}
+            dataChange={handleDropOffChange}
+          />
         </div>
         <SectionHeader title={"Popular Cars"} />
         <div className={styles.popularCars}>
-          {isLoading
-            ? skeletonArr.map((_, index) => <CardSkeleton key={index} />)
-            : carsData.map(
-                (c) =>
-                  c.popular && (
-                    <Card key={c.id} carData={c} onLike={updateLike} />
-                  ),
-              )}
+          {isLoading ? (
+            skeletonArr.map((_, index) => <CardSkeleton key={index} />)
+          ) : carsData.length > 0 ? (
+            carsData.map(
+              (c) =>
+                c.popular && (
+                  <Card key={c.id} carData={c} onLike={updateLike} />
+                ),
+            )
+          ) : (
+            <div>No popular cars available.</div>
+          )}
         </div>
         <SectionHeader title={"Recommended Cars"} />
         <div className={styles.recommendedCars}>
-          {isLoading
-            ? skeletonArr.map((_, index) => <CardSkeleton key={index} />)
-            : carsData.map((c) => (
-                <Card key={c.id} carData={c} onLike={updateLike} />
-              ))}
+          {isLoading ? (
+            skeletonArr.map((_, index) => <CardSkeleton key={index} />)
+          ) : carsData.length > 0 ? (
+            carsData.map((c) => (
+              <Card key={c.id} carData={c} onLike={updateLike} />
+            ))
+          ) : (
+            <div>No recommended cars available.</div>
+          )}
         </div>
       </div>
     </main>

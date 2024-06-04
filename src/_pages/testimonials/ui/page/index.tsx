@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import classNames from "classnames";
-import { ContactUsBanner, PageTitle } from "shared/ui";
+import { BannerTitle, ContactUsBanner, PageTitle } from "shared/ui";
 import { CardReview } from "widgets/card-review";
 
 export const Testimonials = () => {
@@ -8,16 +8,19 @@ export const Testimonials = () => {
     <>
       <main className={classNames("wrapper", styles.container)}>
         <div className={styles.content}>
-          <PageTitle
-            title={"Client's Testimonials"}
-            subTitle={
-              "Hear From Our Valued Clients and Partners About Their Experiences with Us"
-            }
-          />
+          <div className={"flex flex-col items-center gap-2"}>
+            <BannerTitle title={"Client's Testimonials"} />
+            <PageTitle
+              title={""}
+              subTitle={
+                "Hear From Our Valued Clients and Partners About Their Experiences with Us"
+              }
+            />
+          </div>
           <div className={styles.reviews}>
             <CardReview
               review={
-                '"Renting a car through this service was smooth and hassle-free, the vehicle was clean and exactly as described. Highly recommend for its efficiency and excellent customer support."'
+                "“I feel very secure when using caretall's services. Your customer care team is very enthusiastic and the driver is always on time.”"
               }
               fullName={"Nikola Kovač"}
               city={"Almaty"}
@@ -25,7 +28,7 @@ export const Testimonials = () => {
             />
             <CardReview
               review={
-                '"The car rental process was quick and easy, and the car was in perfect condition. I\'ll definitely use this service again for its convenience."'
+                "“The car rental process was quick and easy, and the car was in perfect condition. I'll definitely use this service again for its convenience.”"
               }
               fullName={"Ilya Osipov"}
               city={"Astana"}

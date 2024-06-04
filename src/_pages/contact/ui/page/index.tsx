@@ -67,7 +67,7 @@ export const Contact = () => {
                     d="M112 160l144 112 144-112"
                   ></path>
                 </svg>
-                <p className={styles.phone}>carrental@gmail.com</p>
+                <p className={styles.phone}>toureno@gmail.com</p>
               </div>
               <div className={styles.infoItem}>
                 <svg

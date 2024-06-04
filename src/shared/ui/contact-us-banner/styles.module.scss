@@ -10,19 +10,23 @@
   padding: 56px 0;
   gap: 32px;
 
-  @media (max-width: 768px) {
-    font-size: var(--fz-lg);
-  }
-
-  @media (max-width: 640px) {
-    font-size: var(--fz-md);
-  }
-
   .description {
     color: var(--clr-secondary);
+
+    @media (max-width: 768px) {
+      font-size: var(--fz-lg);
+    }
+
+    @media (max-width: 640px) {
+      font-size: var(--fz-md);
+    }
   }
 
   .phone {
     color: var(--clr-primary);
+
+    @media (max-width: 640px) {
+      font-size: var(--fz-lg);
+    }
   }
 }

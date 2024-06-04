@@ -6,3 +6,6 @@ export { ContactUsBanner } from "./contact-us-banner";
 export { Input } from "./input";
 export { Textarea } from "./textarea";
 export { RequiredStar } from "./required-star";
+export { ButtonStore } from "./button-store";
+export { BannerTitle } from "./banner-title";
+export { LogosCarousel } from "./logos-carousel";

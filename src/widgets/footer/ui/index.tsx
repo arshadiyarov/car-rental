@@ -6,12 +6,12 @@ import classNames from "classnames";
 
 export const Footer = (props: IProps) => {
   return (
-    <footer className={classNames(styles.container, "bg-bgSecondary")}>
+    <footer className={styles.container}>
       <div className={classNames(styles.content, "wrapper")}>
         <div className={styles.top}>
           <div className={"space-y-3"}>
-            <Logo />
-            <p className={"text-sm text-typeGray"}>
+            <Logo mode={"secondary"} />
+            <p className={"text-sm text-typeSecondary"}>
               Our vision is to provide convenience and help increase your sales
               business.
             </p>
@@ -69,7 +69,9 @@ export const Footer = (props: IProps) => {
         </div>
         <div className={styles.line} />
         <div className={styles.bottom}>
-          <p>&copy;2024 CarRent. All rights reserved</p>
+          <p className={"text-typeSecondary"}>
+            &copy;2024 Toureno. All rights reserved
+          </p>
           <div className={styles.links}>
             <Link href={""}>Policy & Privacy</Link>
             <Link href={""}>Terms & Condition</Link>

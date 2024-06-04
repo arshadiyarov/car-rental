@@ -1,5 +1,7 @@
 .container {
   margin-top: auto;
+  background-color: var(--clr-bg-darkBlue);
+  color: var(--clr-type-secondary);
 
   .content {
     padding: 24px 0;
@@ -22,11 +24,11 @@
           font-size: var(--fz-lg);
 
           svg {
-            fill: var(--clr-icon);
+            fill: var(--clr-type-secondary);
             transition: var(--transition-default);
 
             &:hover {
-              fill: var(--clr-type-primary);
+              fill: var(--clr-type-gray);
             }
           }
         }
@@ -51,6 +53,7 @@
       }
 
       .links {
+        color: var(--clr-type-secondary);
         display: flex;
         align-items: center;
         gap: 36px;

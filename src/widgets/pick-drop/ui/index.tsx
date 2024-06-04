@@ -2,14 +2,17 @@ import styles from "./styles.module.scss";
 import { IProps } from "./props";
 import classNames from "classnames";
 
-export const PickDrop = ({ title }: IProps) => {
+export const PickDrop = ({ title, date, time, city, dataChange }: IProps) => {
   return (
     <div className={classNames("bg-bgSecondary", styles.content, "space-y-2")}>
       <div className={styles.top}>{title}</div>
       <div className={styles.bottom}>
         <div className={styles.info}>
           <p>Location</p>
-          <select>
+          <select
+            value={city}
+            onChange={(e) => dataChange("city", e.target.value)}
+          >
             <option value="Almaty">Almaty</option>
             <option value="Astana">Astana</option>
             <option value="Atyrau">Atyrau</option>
@@ -24,12 +27,20 @@ export const PickDrop = ({ title }: IProps) => {
         <div className={styles.line} />
         <div className={styles.info}>
           <p>Date</p>
-          <input type="date" />
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => dataChange("date", e.target.value)}
+          />
         </div>
         <div className={styles.line} />
         <div className={styles.info}>
           <p>Time</p>
-          <input type="time" />
+          <input
+            type="time"
+            value={time}
+            onChange={(e) => dataChange("time", e.target.value)}
+          />
         </div>
       </div>
     </div>

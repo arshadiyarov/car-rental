@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import classNames from "classnames";
-import { ContactUsBanner, PageTitle } from "shared/ui";
+import { BannerTitle, ContactUsBanner, PageTitle } from "shared/ui";
 import { CardPerson } from "widgets/card-person";
 
 export const Team = () => {
@@ -8,12 +8,15 @@ export const Team = () => {
     <>
       <main className={classNames("wrapper", styles.container)}>
         <div className={styles.content}>
-          <PageTitle
-            title={"Our Team"}
-            subTitle={
-              "The Brilliant Minds and Dedicated Professionals Who Make Our Success Possible"
-            }
-          />
+          <div className={styles.top}>
+            <BannerTitle title={"Our Team"} />
+            <PageTitle
+              title={""}
+              subTitle={
+                "The Brilliant Minds and Dedicated Professionals Who Make Our Success Possible"
+              }
+            />
+          </div>
           <div className={styles.team}>
             <CardPerson
               fullName={"Luke Miller"}

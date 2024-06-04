@@ -14,6 +14,8 @@ const config: Config = {
       colors: {
         bgPrimary: "var(--clr-bg-primary)",
         bgSecondary: "var(--clr-bg-secondary)",
+        bgBlue: "var(--clr-bg-blue)",
+        bgDarkBlue: "var(--clr-bg-darkBlue)",
         primary: "var(--clr-primary)",
         typePrimary: "var(--clr-type-primary)",
         typeSecondary: "var(--clr-type-secondary)",
