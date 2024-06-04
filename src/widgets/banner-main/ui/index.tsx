@@ -3,8 +3,7 @@
 import styles from "./styles.module.scss";
 import { IProps } from "./props";
 import Image from "next/image";
-import classNames from "classnames";
-import { Button, ButtonStore } from "shared/ui";
+import { Button } from "shared/ui";
 import { useRouter } from "next/navigation";
 
 export const BannerMain = (props: IProps) => {
