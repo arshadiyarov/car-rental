@@ -5,7 +5,7 @@ export interface IProps
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  liked?: boolean;
+  liked: boolean | undefined;
   carId: string;
   onLike: (id: string) => void;
 }

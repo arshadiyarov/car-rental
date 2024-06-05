@@ -20,19 +20,21 @@ export const CardSkeleton = (props: IProps) => {
           />
         </div>
         <Image
-          src="img/utils/heart-fill.svg"
+          src="/img/utils/heart-fill.svg"
           alt="heart"
           width={24}
           height={24}
         />
       </div>
-      <Image
-        src="img/utils/gallery.svg"
-        alt="Gallery"
-        width={70}
-        height={70}
-        className={"self-center"}
-      />
+      <div className={styles.img}>
+        <Image
+          src="/img/utils/gallery.svg"
+          alt="Gallery"
+          width={70}
+          height={70}
+          className={"self-center"}
+        />
+      </div>
       <div className={styles.mid}>
         <div className={styles.info}>
           <div className={styles.infoItem}>

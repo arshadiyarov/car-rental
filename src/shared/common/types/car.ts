@@ -10,4 +10,5 @@ export interface Car {
   liked: boolean;
   img: string;
   popular: boolean;
+  description: string;
 }

@@ -26,14 +26,14 @@ export const Like = (props: IProps) => {
         <Image
           width={24}
           height={24}
-          src="img/utils/heart-fill.svg"
+          src="/img/utils/heart-fill.svg"
           alt="Heart Fill"
         />
       ) : (
         <Image
           width={24}
           height={24}
-          src="img/utils/heart-outline.svg"
+          src="/img/utils/heart-outline.svg"
           alt="Heart Outline"
         />
       )}

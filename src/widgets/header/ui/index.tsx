@@ -35,7 +35,7 @@ export const Header = () => {
             <Image
               width={24}
               height={24}
-              src="img/utils/heart.svg"
+              src="/img/utils/heart.svg"
               alt="Heart"
             />
           </Button>
@@ -47,7 +47,7 @@ export const Header = () => {
             <Image
               width={24}
               height={24}
-              src="img/utils/burger.svg"
+              src="/img/utils/burger.svg"
               alt="Burger"
             />
           </Button>
@@ -82,7 +82,7 @@ export const Header = () => {
             <Image
               width={24}
               height={24}
-              src="img/utils/close.svg"
+              src="/img/utils/close.svg"
               alt="Close"
             />
           </Button>

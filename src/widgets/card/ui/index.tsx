@@ -21,7 +21,7 @@ export const Card = ({ carData, onLike }: IProps) => {
       <Image
         width={274}
         height={0}
-        src={`/${carData.img}`}
+        src={carData.img}
         className={styles.img}
         alt="Car img"
       />
@@ -31,7 +31,7 @@ export const Card = ({ carData, onLike }: IProps) => {
             <Image
               width={24}
               height={24}
-              src="img/utils/gas-station.svg"
+              src="/img/utils/gas-station.svg"
               alt="Gas Station"
             />
             <p>{carData.fuel}L</p>
@@ -40,7 +40,7 @@ export const Card = ({ carData, onLike }: IProps) => {
             <Image
               width={24}
               height={24}
-              src="img/utils/wheel.svg"
+              src="/img/utils/wheel.svg"
               alt="Wheel"
             />
             <p>{carData.transmission}</p>
@@ -49,7 +49,7 @@ export const Card = ({ carData, onLike }: IProps) => {
             <Image
               width={24}
               height={24}
-              src="img/utils/users.svg"
+              src="/img/utils/users.svg"
               alt="Users"
             />
             <p>{carData.seats} People</p>
@@ -72,7 +72,7 @@ export const Card = ({ carData, onLike }: IProps) => {
           </div>
           <Button
             uppercase={false}
-            onClick={() => router.push(`rent/${carData.id}`)}
+            onClick={() => router.push(`/rent/${carData.id}`)}
           >
             Rent Now
           </Button>
